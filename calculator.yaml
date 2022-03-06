@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: calculator
-        image: dlambrig/hello-kaniko:1.0
+        image: dlambrig/hello-kaniko:0.1f
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -30,6 +30,6 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: calculator
+    app: calculator-feature
   ports:
   - port: 8080
